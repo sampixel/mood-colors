@@ -1,5 +1,5 @@
-" Filename:     wintenvim.vim/autoload/airline/themes/wintenvim.vim
-" Author:       https://github.com/sampixel/wintenvim.vim
+" Filename:     /autoload/airline/themes/wintenvim.vim
+" Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " set palette

@@ -1,5 +1,5 @@
-" Filename:     darkenvim.vim/autoload/airline/themes/darkenvim.vim
-" Author:       https://github.com/sampixel/darkenvim.vim
+" Filename:     /autoload/airline/themes/darkenvim.vim
+" Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " set palette

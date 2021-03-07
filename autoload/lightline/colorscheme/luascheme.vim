@@ -1,16 +1,16 @@
-" Filename:     /autoload/lightline/colorscheme/luascheme.vim
+" Filename:     autoload/lightline/colorscheme/luascheme.vim
 " Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " declare color variable
 let s:background = ["#14161a", 236]
 let s:foreground = ["#e4e4e4", 254]
-let s:keyword    = ["#aa48c7", 128]
-let s:operator   = ["#ef4853", 197]
-let s:function   = ["#2a80b8", 63]
+let s:keyword    = ["#364ced", 140]
+let s:operator   = ["#ce6969", 38]
+let s:function   = ["#a566b6", 63]
 let s:comment    = ["#3f434c", 240]
-let s:string     = ["#97dd61", 83]
-let s:number     = ["#eb9841", 208]
+let s:string     = ["#c3e586", 120]
+let s:number     = ["#b0c41e", 50]
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {}}
 
@@ -39,4 +39,4 @@ let s:p.tabline.middle = [ [ s:comment, s:background ] ]
 let s:p.tabline.right = [ [ s:background, s:string ] ]
 let s:p.tabline.tabsel = [ [ s:foreground, s:comment ] ]
 
-let g:lightline#colorscheme#darkenvim#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#luascheme#palette = lightline#colorscheme#flatten(s:p)

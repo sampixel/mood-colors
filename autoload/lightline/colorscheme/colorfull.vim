@@ -1,5 +1,5 @@
-" Filename:     colorfull.vim/autoload/lightline/colorscheme/colorfull.vim
-" Author:       https://github.com/sampixel/colorfull.vim
+" Filename:     /autoload/lightline/colorscheme/luascheme.vim
+" Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " declare color variable

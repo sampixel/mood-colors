@@ -1,5 +1,5 @@
-" Filename:     colorfull.vim/autoload/colors/colorfull.vim
-" Mainteiner:   https://github.com/sampixel/colorfull.vim
+" Filename:     /colors/colorfull.vim
+" Mainteiner:   https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " clear previous highlight
@@ -56,7 +56,7 @@ call Color("Statement", "bold", keyword.gui, "none", "bold", keyword.cui, "none"
 call Color("Conditional", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Repeat", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Label", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
-call Color("Operator", "bold", number.gui, "none", "bold", number.cui, "none")
+call Color("Operator", "bold", operator.gui, "none", "bold", operator.cui, "none")
 call Color("Keyword", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Exception", "none", number.gui, "none", "none", number.cui, "none")
 call Color("PreProc", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
@@ -71,7 +71,7 @@ call Color("Typedef", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Special", "none", number.gui, "none", "none", number.cui, "none")
 call Color("SpecialChar", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Tag", "none", number.gui, "none", "none", number.cui, "none")
-call Color("Delimiter", "none", number.gui, "none", "none", number.cui, "none")
+call Color("Delimiter", "none", foreground.gui, "none", "none", foreground.cui, "none") 
 call Color("SpecialComment", "none", function.gui, "none", "none", function.cui, "none")
 call Color("Debug", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Underlined", "italic", function.gui, "none", "italic", function.cui, "none")
@@ -143,9 +143,10 @@ call Link("jsArrowFunction","Error")
 call Link("jsObjectKey", "Error")
 
 " Html
-call Link("htmlArg", "Error")
+call Link("htmlArg", "Statement")
 call Link("htmlTag", "Normal")
 call Link("htmlEndTag", "Normal")
+call Link("htmlTagName", "Function")
 
 " Css
 call Link("cssTextProp", "Normal")
@@ -213,6 +214,7 @@ call Link("cStructure", "Statement")
 call Link("cOperator", "Function")
 call Link("cConstant", "Number")
 call Link("cCharacter", "String")
+call Link("cStorageClass", "Keyword")
 
 " MoonScript
 call Link("moonObject", "Error")
@@ -225,3 +227,13 @@ call Link("javaType", "Statement")
 call Link("javaCharacter", "String")
 call Link("javaOperator", "Error")
 call Link("javaTypedef", "Error")
+
+" Php
+call Link("phpIdentifier", "Normal")
+call Link("phpVarSelector", "Normal")
+call Link("phpRegion", "Function")
+call Link("phpFunction", "Function")
+call Link("phpType", "Function")
+call Link("phpKeyword", "Keyword")
+call Link("phpOperator", "Keyword")
+call Link("phpNullValue", "Number")

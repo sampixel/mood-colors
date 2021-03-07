@@ -1,4 +1,4 @@
-![mood-colors](/images/title.png)
+# Mood Colors
 
 This is a series of colorschemes for vim/neovim text editor.
 
@@ -23,6 +23,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 
 ![color-palette](/images/colorfull-palette.png)
 
+### Luascheme
+
+![color-palette](/images/luascheme-palette.png)
+
 
 ## Statusline
 
@@ -38,6 +42,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 
 ![statusline](/images/colorfull-statusline.png)
 
+### Luascheme
+
+![statusline](/images/luascheme-statusline.png)
+
 
 ## Colorscheme
 
@@ -52,6 +60,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 ### Colorfull
 
 ![colorscheme](/images/colorfull-colorscheme.png)
+
+### Luascheme
+
+![colorscheme](/images/luascheme-colorscheme.png)
 
 
 # Installation
@@ -104,13 +116,14 @@ If you want to implement color support for tablines and statusline colors, add t
 "   darkenvim
 "   wintenvim
 "   colorfull
+"   luascheme
 
 " set airline theme
-let g:airline_theme = "darkenvim"
+let g:airline_theme = "luascheme"
 
 " set lightline theme
-let g:lightline = {"colorscheme": "darkenvim"}
+let g:lightline = {"colorscheme": "luascheme"}
 
 " set colorscheme name
-colorscheme [colorscheme]
+colorscheme luascheme
 ```

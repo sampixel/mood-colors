@@ -1,5 +1,5 @@
-" Filename:     colorfull.vim/autoload/airline/themes/colorfull.vim
-" Author:       https://github.com/sampixel/colorfull.vim
+" Filename:     /autoload/airline/themes/colorfull.vim
+" Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " set palette

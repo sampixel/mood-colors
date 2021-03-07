@@ -1,4 +1,4 @@
-" Filename:     /colors/wintenvim.vim
+" Filename:     /colors/luascheme.vim
 " Mainteiner:   https://github.com/sampixel/mood-colors
 " License:      MIT License
 
@@ -10,7 +10,8 @@ if exists("syntax_on")
     syntax reset 
 endif
 
-" set colorscheme name let g:colors_name = "wintenvim"
+" set colorscheme name
+let g:colors_name = "luascheme"
 
 " set function for automate process
 function! Color(group, gui, guifg, guibg, cterm, ctermfg, ctermbg)
@@ -34,12 +35,12 @@ endfunction
 " set colors
 let background  = {"gui": "#14161a", "cui": 236}
 let foreground  = {"gui": "#e4e4e4", "cui": 254}
-let keyword     = {"gui": "#af87d7", "cui": 140}
-let operator    = {"gui": "#00afd7", "cui": 38}
-let function    = {"gui": "#5f5fff", "cui": 63}
+let keyword     = {"gui": "#364ced", "cui": 140}
+let operator    = {"gui": "#ce6969", "cui": 38}
+let function    = {"gui": "#a566b6", "cui": 63}
 let comment     = {"gui": "#3f434c", "cui": 240}
-let string      = {"gui": "#87ff87", "cui": 120}
-let number      = {"gui": "#00ffd7", "cui": 50}
+let string      = {"gui": "#c3e586", "cui": 120}
+let number      = {"gui": "#b0c41e", "cui": 50}
 
 " init color setting
 call Color("Comment", "italic", comment.gui, "none", "italic", comment.cui, "none")
@@ -70,7 +71,7 @@ call Color("Typedef", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Special", "none", number.gui, "none", "none", number.cui, "none")
 call Color("SpecialChar", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Tag", "none", number.gui, "none", "none", number.cui, "none")
-call Color("Delimiter", "none", foreground.gui, "none", "none", foreground.cui, "none")
+call Color("Delimiter", "none", foreground.gui, "none", "none", foreground.cui, "none") 
 call Color("SpecialComment", "none", function.gui, "none", "none", function.cui, "none")
 call Color("Debug", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Underlined", "italic", function.gui, "none", "italic", function.cui, "none")
@@ -177,6 +178,7 @@ call Link("luaOperator", "Statement")
 call Link("luaSymbolOperator", "Error")
 call Link("luaBuiltin", "Error")
 call Link("luaSpecialValue", "Function")
+call Link("luaErrHand", "Function")
 call Link("luaFuncName", "Function")
 call Link("luaFuncCall", "Function")
 call Link("luaStringSpecial", "Number")
