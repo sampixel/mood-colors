@@ -12,7 +12,7 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 ## Palette
 
 ### Darkenvim
-    
+
 ![color-palette](/images/darkenvim-palette.png)
 
 ### Wintenvim
