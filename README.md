@@ -27,6 +27,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 
 ![color-palette](/images/luascheme-palette.png)
 
+### Violetelo
+
+![color-palette](/images/violetelo-palette.png)
+
 
 ## Statusline
 
@@ -46,6 +50,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 
 ![statusline](/images/luascheme-statusline.png)
 
+### Violetelo
+
+![statuslin](/images/violetelo-statusline.png)
+
 
 ## Colorscheme
 
@@ -64,6 +72,10 @@ If you want to see my personal configuration of neovim visit my [github-repo](ht
 ### Luascheme
 
 ![colorscheme](/images/luascheme-colorscheme.png)
+
+### Violetelo
+
+![colorscheme](/images/violetelo-colorscheme.png)
 
 
 # Installation
@@ -117,13 +129,14 @@ If you want to implement color support for tablines and statusline colors, add t
 "   wintenvim
 "   colorfull
 "   luascheme
+"   violetelo
 
 " set airline theme
-let g:airline_theme = "luascheme"
+let g:airline_theme = "violetelo"
 
 " set lightline theme
-let g:lightline = {"colorscheme": "luascheme"}
+let g:lightline = {"colorscheme": "violetelo"}
 
 " set colorscheme name
-colorscheme luascheme
+colorscheme violetelo
 ```

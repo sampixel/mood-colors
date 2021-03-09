@@ -1,4 +1,4 @@
-" Filename:     /colors/darkenvim.vim
+" Filename:     /colors/violetelo.vim
 " Mainteiner:   https://github.com/sampixel/mood-colors
 " License:      MIT License
 
@@ -11,7 +11,7 @@ if exists("syntax_on")
 endif
 
 " set colorscheme name
-let g:colors_name = "darkenvim"
+let g:colors_name = "violetelo"
 
 " set function for automate process
 function! Color(group, gui, guifg, guibg, cterm, ctermfg, ctermbg)
@@ -35,12 +35,12 @@ endfunction
 " set colors
 let background  = {"gui": "#14161a", "cui": 236}
 let foreground  = {"gui": "#e4e4e4", "cui": 254}
-let keyword     = {"gui": "#aa48c7", "cui": 128}
-let operator    = {"gui": "#ef4853", "cui": 197}
-let function    = {"gui": "#2a80b8", "cui": 63}
+let keyword     = {"gui": "#bf59e1", "cui": 140}
+let operator    = {"gui": "#7859e1", "cui": 38}
+let function    = {"gui": "#cc3589", "cui": 63}
 let comment     = {"gui": "#3f434c", "cui": 240}
-let string      = {"gui": "#97dd61", "cui": 83}
-let number      = {"gui": "#eb9841", "cui": 208}
+let string      = {"gui": "#80e159", "cui": 120}
+let number      = {"gui": "#ff4646", "cui": 50}
 
 " init color setting
 call Color("Comment", "italic", comment.gui, "none", "italic", comment.cui, "none")
@@ -71,7 +71,7 @@ call Color("Typedef", "bold", keyword.gui, "none", "bold", keyword.cui, "none")
 call Color("Special", "none", number.gui, "none", "none", number.cui, "none")
 call Color("SpecialChar", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Tag", "none", number.gui, "none", "none", number.cui, "none")
-call Color("Delimiter", "none", foreground.gui, "none", "none", foreground.cui, "none")
+call Color("Delimiter", "none", foreground.gui, "none", "none", foreground.cui, "none") 
 call Color("SpecialComment", "none", function.gui, "none", "none", function.cui, "none")
 call Color("Debug", "none", number.gui, "none", "none", number.cui, "none")
 call Color("Underlined", "italic", function.gui, "none", "italic", function.cui, "none")
@@ -147,7 +147,7 @@ call Link("htmlArg", "Statement")
 call Link("htmlTag", "Normal")
 call Link("htmlEndTag", "Normal")
 call Link("htmlTagName", "Function")
-call Link("htmlSpecialChar", "Number")
+call Link("htmlSpecialChar", "Error")
 
 " Css
 call Link("cssTextProp", "Normal")
@@ -181,6 +181,7 @@ call Link("luaOperator", "Statement")
 call Link("luaSymbolOperator", "Error")
 call Link("luaBuiltin", "Error")
 call Link("luaSpecialValue", "Function")
+call Link("luaErrHand", "Function")
 call Link("luaFuncName", "Function")
 call Link("luaFuncCall", "Function")
 call Link("luaStringSpecial", "Number")
