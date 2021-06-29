@@ -6,77 +6,75 @@ All of those colorschemes support [lightline.vim](https://github.com/itchyny/lig
 
 If you want to see my personal configuration of neovim visit my [github-repo](https://github.com/sampixel/nvim)
 
-# Prefaction
+## Disclaimer
 
+These colorschemes no longer support cterm colors.
 
 ## Palette
 
-### Darkenvim
+#### Darkenvim
 
 ![color-palette](/images/darkenvim-palette.png)
 
-### Wintenvim
+#### Wintenvim
 
 ![color-palette](/images/wintenvim-palette.png)
 
-### Colorfull
+#### Colorfull
 
 ![color-palette](/images/colorfull-palette.png)
 
-### Luascheme
+#### Luascheme
 
 ![color-palette](/images/luascheme-palette.png)
 
-### Violetelo
+#### Violetelo
 
 ![color-palette](/images/violetelo-palette.png)
 
-
 ## Statusline
 
-### Darkenvim
+#### Darkenvim
 
 ![statusline](/images/darkenvim-statusline.png)
 
-### Wintenvim
+#### Wintenvim
 
 ![statusline](/images/wintenvim-statusline.png)
 
-### Colorfull
+#### Colorfull
 
 ![statusline](/images/colorfull-statusline.png)
 
-### Luascheme
+#### Luascheme
 
 ![statusline](/images/luascheme-statusline.png)
 
-### Violetelo
+#### Violetelo
 
-![statuslin](/images/violetelo-statusline.png)
-
+![statusline](/images/violetelo-statusline.png)
 
 ## Colorscheme
 
-### Darkenvim
+#### Darkenvim
 
 ![colorscheme](/images/darkenvim-colorscheme.png)
 
-### Wintenvim
+#### Wintenvim
 
 ![colorscheme](/images/wintenvim-colorscheme.png)
 
-### Colorfull
+#### Colorfull
 
 ![colorscheme](/images/colorfull-colorscheme.png)
 
-### Luascheme
+#### Luascheme
 
 ![colorscheme](/images/luascheme-colorscheme.png)
 
-### Violetelo
+#### Violetelo
 
 ![colorscheme](/images/violetelo-colorscheme.png)
-
 
 # Installation
 
@@ -106,8 +104,7 @@ Or you can even clone this repo inside your `~/.config/nvim/autoload/plugged` fo
 
 Refresh your vim environment with `:source $MYVIMRC`
 
-
-## Configuration
+# Configuration
 
 To be able to see the changes in your vim environment you need to implement the following lines inside your `.vimrc` or `init.vim`
 ```vim
@@ -120,16 +117,12 @@ if (has("termguicolors"))
 endif
 ```
 
-## Lightline and Airline
+### Lightline and Airline
 
 If you want to implement color support for tablines and statusline colors, add the following line to your `.vimrc` or `init.vim`
 ```vim
 " list of available colorschemes
-"   darkenvim
-"   wintenvim
-"   colorfull
-"   luascheme
-"   violetelo
+" darkenvim - wintenvim - colorfull - luascheme - violetelo - devtool
 
 " set airline theme
 let g:airline_theme = "violetelo"

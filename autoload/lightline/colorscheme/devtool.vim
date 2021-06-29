@@ -1,16 +1,16 @@
-" Filename:     autoload/lightline/colorscheme/violetelo.vim
+" Filename:     autoload/lightline/colorscheme/devtool.vim
 " Author:       https://github.com/sampixel/mood-colors
 " License:      MIT License
 
 " declare color variable
-let s:background = ["#14161a", 236]
-let s:foreground = ["#e4e4e4", 254]
-let s:keyword    = ["#bf59e1", 140]
-let s:operator   = ["#7859e1", 38]
-let s:function   = ["#cc3589", 63]
-let s:comment    = ["#3f434c", 240]
-let s:string     = ["#80e159", 120]
-let s:number     = ["#ff4646", 50]
+let s:background = "#202124"
+let s:foreground = "#bcc6cc"
+let s:keyword    = "#8277ad"
+let s:operator   = "#aba84a"
+let s:function   = "#8277ad"
+let s:comment    = "#3f434c"
+let s:string     = "#d16135"
+let s:number     = "#6cc37b"
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {}}
 
@@ -39,4 +39,4 @@ let s:p.tabline.middle = [ [ s:comment, s:background ] ]
 let s:p.tabline.right = [ [ s:background, s:string ] ]
 let s:p.tabline.tabsel = [ [ s:foreground, s:comment ] ]
 
-let g:lightline#colorscheme#violetelo#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#devtool#palette = lightline#colorscheme#flatten(s:p)
